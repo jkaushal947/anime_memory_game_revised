@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Memory Game</title>
+    <link rel="icon" href="img/totoro.jpg">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h2>Anime Memory Game</h2>
+        </header>
+
+        <section class="score-panel">
+            <h3>Score Panel</h3>
+            <ul id="star-rating" class="star-rating">
+                <li class="star"><i class="fa fa-star"></i></li>
+                <li class="star"><i class="fa fa-star"></i></li>
+                <li class="star"><i class="fa fa-star"></i></li>
+            </ul>
+            <span class="moves-counter">0</span> Moves
+            <div class="timer-container">
+                <span class="timer"><i class="fa fa-hourglass-start"></i> Timer: 00:00</span>
+            </div>
+            <div class="reset">
+                <button class="btn reset-btn">Reset <i class="fa fa-repeat"></i></button>
+            </div>
+        </section>
+
+        <!-- Modal -->
+
+        <section class="win-game-modal">
+            <div id="modal" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Congratulations!</h2>
+                    <p>You have won the game and found all 8 pairs of anime characters.</p>
+                    <img class="modal-img" src="img/miku_hatsune.jpg" alt="">
+                    <button class="btn play-again-btn">Play Again?</button>
+                </div>
+            </div>
+        </section>
+
+        <ul class="deck"></ul>
+    </div>
+
+    <script src="script.js"></script>
+
+</body></html>
